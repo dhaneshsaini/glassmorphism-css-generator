@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+.glassmorphism {
+  width: 100%;
+  margin: 0 5%;
+  display: grid;
+  grid-template-columns: repeat(2, 45%);
+  grid-template-rows: repeat(2, auto);
+}
+.proSetting {
+  height: 200px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column-start: span 2;
+}
+.proSetting > input {
+  margin: 0 20px;
+}
+input[type="color"] {
+  border: none;
+  -webkit-appearance: none;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+  border: none;
+}
+.displayGlass {
+  display: grid;
+  place-items: center;
+}
+.displayGlass img {
+  width: 100%;
+  z-index: 1;
+}
+.displayGlass h1 {
+  color: #fff;
+  z-index: 2;
+  font-size: 50px;
+  font-weight: 700;
+  position: absolute;
+  text-transform: uppercase;
+}
+.displayGlass .card {
+  z-index: 3;
+  width: 350px;
+  height: 100px;
+  transform: rotate(-15deg);
+  position: absolute;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+.cssOutput {
+  display: grid;
+  place-items: center;
+  background-color: cornsilk;
+}
+#cssOut {
+  font-size: 18px;
+  font-family: monospace;
+  padding: 20px;
+}
+.copyBtn {
+}
