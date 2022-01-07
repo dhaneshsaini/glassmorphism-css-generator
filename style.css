@@ -26,30 +26,30 @@ body {
 .proSetting > input {
   margin: 0 20px;
 }
-input[type="color"] {
+.proSetting input[type="color"] {
   cursor: pointer;
   -webkit-appearance: none;
   border: 2px solid #000;
 }
-input[type="color"]::-webkit-color-swatch-wrapper {
+.proSetting input[type="color"]::-webkit-color-swatch-wrapper {
   padding: 0;
   margin: 0;
   border: none;
 }
-input[type="color"]::-webkit-color-swatch {
+.proSetting input[type="color"]::-webkit-color-swatch {
   border: none;
 }
-input[type="range"] {
+.proSetting input[type="range"] {
   -webkit-appearance: none;
 }
-input[type="range"]::-webkit-slider-runnable-track {
+.proSetting input[type="range"]::-webkit-slider-runnable-track {
   width: 80%;
   height: 5px;
   background: #ddd;
   border: none;
   border-radius: 3px;
 }
-input[type="range"]::-webkit-slider-thumb {
+.proSetting input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   border: none;
   height: 14px;
@@ -58,27 +58,27 @@ input[type="range"]::-webkit-slider-thumb {
   background: #0384fd;
   margin-top: -4px;
 }
-input[type="range"]:focus {
+.proSetting input[type="range"]:focus {
   outline: none;
 }
-input[type="range"]:focus::-webkit-slider-runnable-track {
+.proSetting input[type="range"]:focus::-webkit-slider-runnable-track {
   background: #ccc;
 }
 /* FF */
-input[type="range"] {
+.proSetting input[type="range"] {
   /* fix for FF unable to apply focus style bug  */
   border: 1px solid white;
   /*required for proper track sizing in FF*/
   width: 300px;
 }
-input[type="range"]::-moz-range-track {
+.proSetting input[type="range"]::-moz-range-track {
   width: 300px;
   height: 5px;
   background: #ddd;
   border: none;
   border-radius: 3px;
 }
-input[type="range"]::-moz-range-thumb {
+.proSetting input[type="range"]::-moz-range-thumb {
   border: none;
   height: 16px;
   width: 16px;
@@ -86,11 +86,11 @@ input[type="range"]::-moz-range-thumb {
   background: goldenrod;
 }
 /*hide the outline behind the border*/
-input[type="range"]:-moz-focusring {
+.proSetting input[type="range"]:-moz-focusring {
   outline: 1px solid white;
   outline-offset: -1px;
 }
-input[type="range"]:focus::-moz-range-track {
+.proSetting input[type="range"]:focus::-moz-range-track {
   background: #ccc;
 }
 .displayGlass {
