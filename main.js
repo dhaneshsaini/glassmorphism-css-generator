@@ -25,8 +25,7 @@ function change() {
     cs.backdropFilter = `blur(${inp[1].value}px)`;
     cs.border = `1px solid rgba(${hexToRgb(inp[0].value)},${inp[3].value})`;
 
-    cssOut.innerText = `
-/* https://frontendweb.site/ */
+    cssOut.innerText = `/* https://frontendweb.site/ */
 
 background: rgba(${hexToRgb(inp[0].value)},${inp[2].value});
 border-radius: 10px;
@@ -38,9 +37,11 @@ border: 1px solid rgba(${hexToRgb(inp[0].value)},${inp[3].value});
 }
 
 // copy code
-const copyBtn = document.querySelector('.copyBtn');
-copyBtn.onclick = () => {
-    cssOut.select();
-    cssOut.setSelectionRange(0, 99999);
-    navigator.clipboard.writeText(cssOut.innerText);
+function CopyToClipboard(id) {
+    var r = document.createRange();
+    r.selectNode(document.getElementById(id));
+    window.getSelection().removeAllRanges();
+    window.getSelection().addRange(r);
+    document.execCommand('copy');
+    window.getSelection().removeAllRanges();
 }

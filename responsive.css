@@ -1,4 +1,4 @@
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .glassmorphism {
     width: 100%;
     margin: 0;
@@ -26,16 +26,11 @@
     width: 250px;
     height: 80px;
   }
-  .cssOutput{
-      height: 300px;
+  .cssOutput {
+    height: 300px;
   }
   #cssOut {
-    padding: 0;
-    font-size: 12px;
+    padding: 15px;
+    font-size: 16px;
   }
-}
-
-/* Tablet Screen */
-@media screen and (max-width: 768px) {
-    
 }
